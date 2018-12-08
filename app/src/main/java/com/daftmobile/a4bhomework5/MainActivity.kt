@@ -21,11 +21,6 @@ class MainActivity : AppCompatActivity() {
         showInfoButton.setOnClickListener {
             viewModel.showPokemonInfo(pokedexIndexInput.text.toString())
         }
-
-
-
-        viewModel.showPokemonInfo("1")
-//        showPokemonActivity(PokemonItem("101","AAA",30))
     }
 
     private fun showPokemonActivity(pokemon: PokemonItem?) {

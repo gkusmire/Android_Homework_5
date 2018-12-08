@@ -7,5 +7,7 @@ import android.support.annotation.ColorInt
 
 @Parcelize
 @SuppressLint("ParcelCreator")
-data class PokemonItem(val index: String, val name: String, @ColorInt val backgroundColor: Int): Parcelable
+data class PokemonItem(val index: String = "",
+                       val name: String = "",
+                       @ColorInt val backgroundColor: Int = 0): Parcelable
 
